@@ -107,7 +107,7 @@ class Step {
       Udp->endPacket();
       msg.empty();
 
-      // Serial.print("pin: "); Serial.print(pin);Serial.print(" a: "); Serial.print(movingAverage);
+      Serial.print("pin: "); Serial.print(pin);Serial.print(" a: "); Serial.print(movingAverage);
       // Serial.print("la: "); Serial.print(lMovingAverage);Serial.print(" v- a: ");Serial.println(velocity - lMovingAverage);
       return;
     }

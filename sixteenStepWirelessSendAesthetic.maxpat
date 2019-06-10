@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1232.0, 1196.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-201",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -6970,7 +6983,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 387.0, 557.0, 63.5, 35.0 ],
 									"style" : "",
-									"text" : "18.584999"
+									"text" : "16.316999"
 								}
 
 							}
@@ -9315,6 +9328,13 @@
 					"destination" : [ "obj-347", 2 ],
 					"order" : 0,
 					"source" : [ "obj-198", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-200", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}

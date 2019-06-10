@@ -14,23 +14,23 @@
 #include "Step.h"
 
 // TODO: make pins and panel#, IP address based on hardware switches
-#define PANEL 2 // panel 0 has 3, // panel 1 has 5, // panel 2 and 3 have 4 pins.
+#define PANEL 1 // panel 1 has 3, // panel 2 has 5, // panel 3 and 4 have 4 tiles.
 
 #if PANEL == 1
 int tilePins[3] = {34, 36, 39};
-IPAddress ip(10, 0, 1, 101); // my IP address (requested)
+IPAddress ip(10, 0, 1, 201); // my IP address (requested)
 #endif
 #if PANEL == 2
 int tilePins[5] = {34, 36, 39, 35, 32};
-IPAddress ip(10, 0, 1, 102); // my IP address (requested)
+IPAddress ip(10, 0, 1, 202); // my IP address (requested)
 #endif
 #if PANEL == 3
 int tilePins[4] = {34, 36, 39, 35};
-IPAddress ip(10, 0, 1, 103); // my IP address (requested)
+IPAddress ip(10, 0, 1, 203); // my IP address (requested)
 #endif
 #if PANEL == 4
 int tilePins[4] = {34, 36, 39, 35};
-IPAddress ip(10, 0, 1, 104); // my IP address (requested)
+IPAddress ip(10, 0, 1, 204); // my IP address (requested)
 #endif
 
 // Tile objects // ADC1 ch 0: 36 (VP), 39 (VN), 34  .. 35, 32 to keep going
@@ -48,7 +48,7 @@ char ssid[] = "things";          // your network SSID (name)
 char password[] = "connected";                    // your network password
 
 WiFiUDP Udp;                                // A UDP instance to let us send and receive packets over UDP
-const IPAddress outIp(10, 0, 1, 2);  // remote IP of your computer
+const IPAddress outIp(10, 0, 1, 4);  // remote IP of your computer
 // use to request a static IP
 //IPAddress ip(10, 0, 1, 103); // my IP address (requested)
 IPAddress gateway(10, 0, 1, 1);
