@@ -14,7 +14,7 @@
 #include "Step.h"
 
 // TODO: make pins and panel#, IP address based on hardware switches
-#define PANEL 1 // panel 1 has 3, // panel 2 has 5, // panel 3 and 4 have 4 tiles.
+#define PANEL 2 // panel 1 has 3, // panel 2 has 5, // panel 3 and 4 have 4 tiles.
 
 #if PANEL == 1
 int tilePins[3] = {34, 36, 39};
@@ -44,11 +44,11 @@ Step *tile[numTiles];
 
 
 // WIFI Credentials
-char ssid[] = "things";          // your network SSID (name)
-char password[] = "connected";                    // your network password
+char ssid[] = "aesthetic";          // your network SSID (name)
+char password[] = "boomboom";                    // your network password
 
 WiFiUDP Udp;                                // A UDP instance to let us send and receive packets over UDP
-const IPAddress outIp(10, 0, 1, 4);  // remote IP of your computer
+const IPAddress outIp(10, 0, 1, 3);  // remote IP of your computer
 // use to request a static IP
 //IPAddress ip(10, 0, 1, 103); // my IP address (requested)
 IPAddress gateway(10, 0, 1, 1);
